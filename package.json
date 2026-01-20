@@ -23,13 +23,15 @@
 		"lint:oxlint": "oxlint --max-warnings=0 --type-aware .",
 		"format": "bun run format:oxfmt && bun run format:oxlint",
 		"format:oxfmt": "oxfmt --write .",
-		"format:oxlint": "oxlint --fix --type-aware ."
+		"format:oxlint": "oxlint --fix --type-aware .",
+		"release": "bumpp && bun run build"
 	},
 	"dependencies": {
 		"open": "^11.0.0"
 	},
 	"devDependencies": {
 		"@types/bun": "latest",
+		"bumpp": "^10.4.0",
 		"publint": "^0.3.16",
 		"tsdown": "^0.20.0-beta.4",
 		"unplugin-unused": "^0.5.6"
