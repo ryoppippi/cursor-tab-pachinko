@@ -12,6 +12,6 @@ export default defineConfig({
 	unused: true,
 	nodeProtocol: true,
 	onSuccess: async () => {
-		await Bun.$`cp -r ./assets ./dist/assets`;
+		await Bun.$`cp -r ./assets/ ./dist/assets/`;
 	},
 });
