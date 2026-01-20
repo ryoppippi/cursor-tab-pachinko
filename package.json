@@ -3,10 +3,18 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "lint": "bun run lint:oxfmt && bun run lint:oxlint",
+    "lint:oxfmt": "oxfmt --check .",
+    "lint:oxlint": "oxlint --max-warnings=0 --type-aware .",
+    "format": "bun run format:oxfmt && bun run format:oxlint",
+    "format:oxfmt": "oxfmt --write .",
+    "format:oxlint": "oxlint --fix --type-aware ."
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
-  "peerDependencies": {
-    "typescript": "^5"
+  "dependencies": {
+    "open": "^11.0.0"
   }
 }
