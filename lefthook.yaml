@@ -1,0 +1,15 @@
+pre-commit:
+  piped: true
+  jobs:
+    - name: oxlint
+      glob: '*.{ts,tsx,js,jsx,mts,cts}'
+      run: oxlint --max-warnings=0 --type-aware --fix {staged_files}
+      stage_fixed: true
+    - name: oxfmt
+      glob: '*'
+      run: oxfmt --no-error-on-unmatched-pattern {staged_files}
+      stage_fixed: true
+    - name: nixfmt
+      glob: '*.nix'
+      run: nixfmt {staged_files}
+      stage_fixed: true

@@ -27,9 +27,17 @@
         { pkgs }:
         {
           default = pkgs.mkShellNoCC {
-            packages = with pkgs; [ bun ];
+            packages = with pkgs; [
+              bun
+              typescript-go
+              oxlint
+              oxfmt
+              nixfmt
+              lefthook
+            ];
             shellHook = ''
-              bun ci
+              bun install
+              lefthook install > /dev/null 2>&1
             '';
           };
         }
