@@ -4,7 +4,13 @@
 
 A fun hook for Cursor that plays pachinko sounds when you accept tab completions.
 
-After 4 tab completions, it opens a special YouTube video: https://youtu.be/TgQAFTvbpaI?si=a4iEQsW5p3SvhsSQ&t=1
+After 4 tab completions, it opens a special YouTube video
+
+
+
+https://github.com/user-attachments/assets/2b7cbf6d-28c1-438e-a5b2-778b8edba4b5
+
+
 
 ## Setup
 
