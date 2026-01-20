@@ -10,9 +10,6 @@ export default defineConfig({
 	dts: false,
 	publint: true,
 	unused: true,
-	exports: {
-		devExports: true,
-	},
 	nodeProtocol: true,
 	onSuccess: async () => {
 		await Bun.$`cp -r ./assets ./dist/assets`;

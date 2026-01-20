@@ -2,19 +2,14 @@
 	"name": "cursor-tab-pachinko",
 	"version": "0.0.1",
 	"license": "MIT",
+	"bin": "./dist/index.mjs",
 	"files": [
 		"dist"
 	],
 	"type": "module",
 	"exports": {
-		".": "./index.ts",
+		".": "./dist/index.mjs",
 		"./package.json": "./package.json"
-	},
-	"publishConfig": {
-		"exports": {
-			".": "./dist/index.mjs",
-			"./package.json": "./package.json"
-		}
 	},
 	"scripts": {
 		"build": "bun -b tsdown",
