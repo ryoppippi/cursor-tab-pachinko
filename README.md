@@ -1,5 +1,7 @@
 # cursor-tab-pachinko
 
+[![npm version](https://img.shields.io/npm/v/cursor-tab-pachinko?color=yellow)](https://npmjs.com/package/cursor-tab-pachinko)
+
 A fun hook for Cursor that plays pachinko sounds when you accept tab completions.
 
 After 4 tab completions, it opens a special YouTube video: https://youtu.be/TgQAFTvbpaI?si=a4iEQsW5p3SvhsSQ&t=1
