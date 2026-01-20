@@ -1,6 +1,6 @@
 {
 	"name": "cursor-tab-pachinko",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"license": "MIT",
 	"bin": "./dist/index.mjs",
 	"files": [
